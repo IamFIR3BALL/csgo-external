@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "csgo-external", "csgo-external\csgo-external.vcxproj", "{CDBDBF19-8F09-4A72-83CC-29717E9AC700}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDBDBF19-8F09-4A72-83CC-29717E9AC700}.Debug|x64.ActiveCfg = Debug|x64
+		{CDBDBF19-8F09-4A72-83CC-29717E9AC700}.Debug|x64.Build.0 = Debug|x64
+		{CDBDBF19-8F09-4A72-83CC-29717E9AC700}.Debug|x86.ActiveCfg = Debug|Win32
+		{CDBDBF19-8F09-4A72-83CC-29717E9AC700}.Debug|x86.Build.0 = Debug|Win32
+		{CDBDBF19-8F09-4A72-83CC-29717E9AC700}.Release|x64.ActiveCfg = Release|x64
+		{CDBDBF19-8F09-4A72-83CC-29717E9AC700}.Release|x64.Build.0 = Release|x64
+		{CDBDBF19-8F09-4A72-83CC-29717E9AC700}.Release|x86.ActiveCfg = Release|Win32
+		{CDBDBF19-8F09-4A72-83CC-29717E9AC700}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18E24251-3B4E-4775-B01B-30A250EE2E30}
+	EndGlobalSection
+EndGlobal
