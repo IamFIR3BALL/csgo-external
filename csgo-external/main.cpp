@@ -55,14 +55,14 @@ int main(int argc, char** argv)
 		return 0;
 	}
 
-	offset::dwLocalPlayer = cstoi(settings["dwLocalPlayer"]);
+	/*offset::dwLocalPlayer = cstoi(settings["dwLocalPlayer"]);
 	offset::dwHealth = cstoi(settings["dwHealth"]);
 	offset::dwGlowIndex = cstoi(settings["dwGlowIndex"]);
 	offset::dwTeamNum = cstoi(settings["dwTeamNum"]);
 	offset::dwScoped = cstoi(settings["dwScoped"]);
 	offset::dwCrosshairID = cstoi(settings["dwCrosshairID"]);
 	offset::dwEntityList = cstoi(settings["dwEntityList"]);
-	offset::dwGlowObjectManager = cstoi(settings["dwGlowObjectManager"]);
+	offset::dwGlowObjectManager = cstoi(settings["dwGlowObjectManager"]);*/
 
 	g_pCore = new CCore();
 	if (!g_pCore->isOk())
