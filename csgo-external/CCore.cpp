@@ -10,7 +10,7 @@ CCore::CCore()
 		m_bIsOk = false;
 		return;
 	}
-	if (!m_pMemory->addModule("client_panorama.dll"))
+	if (!m_pMemory->addModule("client.dll"))
 	{
 		m_bIsOk = false;
 		return;
@@ -38,13 +38,13 @@ void CCore::process()
 
 DWORD CCore::getEntityBaseByIdx(int idx)
 {
-	static DWORD m_dwClientBase = m_pMemory->getModuleBase("client_panorama.dll");
+	static DWORD m_dwClientBase = m_pMemory->getModuleBase("client.dll");
 	return m_pMemory->read<DWORD>(m_dwClientBase + offset::dwEntityList + idx * 0x10);
 }
 
 DWORD CCore::getLocalPlayer()
 {
-	static DWORD m_dwClientBase = m_pMemory->getModuleBase("client_panorama.dll");
+	static DWORD m_dwClientBase = m_pMemory->getModuleBase("client.dll");
 	return m_pMemory->read<DWORD>(m_dwClientBase + offset::dwLocalPlayer);
 }
 

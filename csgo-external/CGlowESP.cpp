@@ -4,7 +4,7 @@
 
 CGlowESP::CGlowESP()
 {
-	m_dwClientBase = g_pCore->getMemory()->getModule("client_panorama.dll").dwBase;
+	m_dwClientBase = g_pCore->getMemory()->getModule("client.dll").dwBase;
 }
 
 
@@ -32,6 +32,7 @@ void CGlowESP::process()
 			if (cEntity.getTeam() != cLocalPlayer.getTeam())
 			{
 				GlowObjectDefinition_t glow;
+				uint32_t iasd = cEntity.getGlowIndex();
 				g_pCore->getMemory()->read<GlowObjectDefinition_t>(dwGlowObjectManager + cEntity.getGlowIndex() * sizeof(GlowObjectDefinition_t), &glow);
 
 				int m_iHealth = cEntity.getHP();

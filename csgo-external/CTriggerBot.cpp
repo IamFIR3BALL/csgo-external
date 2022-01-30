@@ -4,7 +4,7 @@
 
 CTriggerBot::CTriggerBot()
 {
-	m_dwClientBase = g_pCore->getMemory()->getModule("client_panorama.dll").dwBase;
+	m_dwClientBase = g_pCore->getMemory()->getModule("client.dll").dwBase;
 }
 
 
